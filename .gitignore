@@ -52,3 +52,17 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Sensitive config — use appsettings.Development.json for local overrides
+appsettings.json
+
+# Rider
+.idea/
+*.DotSettings.user
