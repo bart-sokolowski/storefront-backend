@@ -89,7 +89,7 @@ After the background processor settles a payment, it pushes a `PaymentStatusUpda
 Deleting a product sets its status to `Archived` rather than removing the record and is then filtered out from the products list. This preserves the product snapshot embedded in historical orders so that order history remains accurate even after a product is removed from the storefront.
 
 ### FluentValidation via Service Abstraction
-Validators are resolved through `IValidationService`, which wraps `IValidator<T>` resolution.
+Validators are resolved through `IValidationService`, which wraps `IValidator<T>` resolution. It uses RuleForEach feature for validating each element of a collection, it validates every item in the order's and product's items list independently.
 
 ---
 
